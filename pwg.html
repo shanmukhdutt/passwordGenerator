@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PasswordGenerator</title>
+    <link href="pwg.css" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <div class="container">
+        <h1>PasswordGenerator</h1>
+        <div class="inputBox">
+            <input type="text" class="passBox" id="passBox" disabled/>
+            <span class="material-icons" id="copyIcon">content_copy</span>
+        </div>
+        <input type="range" min="1" max="30" value="8" id="inputSlider"/>
+        <div class="row">
+            <p>Password Lenght</p>
+            <span id="sliderValue"></span>
+        </div> 
+        <div class="row">
+            <lable for="lowercase">Include Lowercase Letter(a-z)</lable>
+            <input type="checkbox" name="lowercase" id="lowercase" checked/>
+        </div>
+        <div class="row">
+            <lable for="Uppercase">Include Uppercase Letter(A-Z)</lable>
+            <input type="checkbox" name="uppercase" id="uppercase" checked/>
+        </div>
+        
+
+        <div class="row">
+            <lable for="symbols">Include Symbols(@-*)</lable>
+            <input type="checkbox" name="symbols" id="symbols" checked/>
+        </div>
+        <div class="row">
+            <lable for="numbers">Inlcude Numbers(0-9)</lable>
+            <input type="checkbox"name="numbers" id="numbers" checked/>
+        </div>
+        <button class="button" class="genBtn" id="genBtn">
+            Generate Password
+        </button>
+    </div>
+    <script src="pwg.js"></script>
+    
+</body>
+</html>
